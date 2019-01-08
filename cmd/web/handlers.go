@@ -88,3 +88,23 @@ func (app *application) createSnippetForm(w http.ResponseWriter, r *http.Request
 		Form: forms.New(nil),
 	})
 }
+
+func (app *application) signupUserForm(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "signup user form")
+}
+
+func (app *application) signupUser(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "signup user")
+}
+
+func (app *application) loginUserForm(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "login user form")
+}
+
+func (app *application) loginUser(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "login user")
+}
+
+func (app *application) logoutUser(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "logout user")
+}
